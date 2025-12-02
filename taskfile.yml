@@ -1,0 +1,30 @@
+version: '3'
+
+vars:
+env:
+  MYENV: 'globalenv'
+
+dotenv: ['.env']
+
+tasks:
+  default:
+    desc: "Show all tasks"
+    cmds:
+      - task --list-all
+  globalenv:
+    desc: "Check global environment access"
+    cmds:
+      - echo $MYENV
+    silent: true
+  localenv:
+    desc: "Check local environment access"
+    cmds:
+      - echo $MYENV
+    silent: true
+    env:
+      MYENV: 'localenv'
+  dotenv:
+    desc: "Check dotenv file access"
+    cmds:
+      - echo $DOT_ENV
+    silent: true
