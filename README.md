@@ -4,7 +4,7 @@ GoとTSでプロダクトを作る場合のサンプル
 
 ## Setup
 
-### goのair
+### air（hot reload）
 
 ```
 cd backend
