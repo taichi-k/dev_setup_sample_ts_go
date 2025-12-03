@@ -28,3 +28,8 @@ tasks:
     cmds:
       - echo $DOT_ENV
     silent: true
+  lint:
+    desc: "Run linters"
+    cmds:
+      - ./bin/golangci-lint run ./...
+    dir: ./backend
