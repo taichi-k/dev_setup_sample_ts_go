@@ -5,7 +5,7 @@
   </a>
 </p>
 
-> TypeScriptとGoで新規プロダクトを作成する時のレンプレ
+> TypeScriptとGoで新規プロダクトを作成する時のテンプレ
 
 ## Author
 
@@ -19,6 +19,10 @@
 Give a ⭐️ if this project helped you!
 
 ## Setup
+
+### go
+
+Goをインストールしてください。
 
 ### air（hot reload）
 
