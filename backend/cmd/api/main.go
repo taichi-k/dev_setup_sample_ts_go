@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/hello", func(w http.ResponseWriter, _ *http.Request) {
+	http.HandleFunc("/api/hello", func(w http.ResponseWriter, _ *http.Request) {
 		fmt.Fprintf(w, "Hello from Go!")
 	})
 
