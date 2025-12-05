@@ -38,8 +38,8 @@ tasks:
     cmds:
       - go test -v ./...
     dir: ./backend
-  run:go:
-    desc: "Run Go backend server"
+  up:
+    desc: "Run TS and Go servers"
     cmds:
-      - go run ./cmd/api/main.go
-    dir: ./backend
+      - pnpm run start
+    dir: ./frontend
