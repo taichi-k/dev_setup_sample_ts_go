@@ -1,13 +1,23 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"log"
 	"net/http"
 	"time"
 )
 
+type HealthResponse struct {
+	Status string `json:"status"`
+}
+
 func main() {
+	http.HandleFunc("/api/health", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "application/json")
+		json.NewEncoder(w).Encode(HealthResponse{Status: "ok"})
+	})
+
 	http.HandleFunc("/api/hello", func(w http.ResponseWriter, _ *http.Request) {
 		fmt.Fprintf(w, "Hello from Go!")
 	})
