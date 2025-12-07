@@ -10,8 +10,11 @@ const config: StorybookConfig = {
     "@storybook/addon-vitest",
     "@storybook/addon-a11y",
     "@storybook/addon-docs",
-    "@storybook/addon-onboarding"
+    "@storybook/addon-onboarding",
   ],
-  "framework": "@storybook/react-vite"
+  "framework": "@storybook/react-vite",
+  "docs": {
+    "autodocs": "tag" // CSF3のstoriesからdocs自動生成
+  },
 };
 export default config;

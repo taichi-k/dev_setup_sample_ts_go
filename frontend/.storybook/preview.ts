@@ -7,7 +7,10 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/i,
       },
+      expanded: true,
     },
+
+    layout: 'centered',
 
     a11y: {
       // 'todo' - show a11y violations in the test UI only
