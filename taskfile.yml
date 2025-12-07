@@ -28,16 +28,31 @@ tasks:
     cmds:
       - echo $DOT_ENV
     silent: true
-  lint:
+  lint:go:
     desc: "Run linters"
     cmds:
       - ./bin/golangci-lint run ./...
     dir: ./backend
-  test:
+  test:go:
     desc: "Run tests"
     cmds:
       - go test -v ./...
     dir: ./backend
+  lint:ts:
+    desc: "Run TS linters"
+    cmds:
+      - pnpm run lint
+    dir: ./frontend
+  fmt:ts:
+    desc: "Format TS code"
+    cmds:
+      - pnpm run format
+    dir: ./frontend
+  test:ts:
+    desc: "Run TS tests"
+    cmds:
+      - pnpm run test
+    dir: ./frontend
   up:
     desc: "Run TS and Go servers"
     cmds:
