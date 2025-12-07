@@ -3,7 +3,7 @@ import Button from './Button';
 
 const meta: Meta<typeof Button> = {
   component: Button,
-  title: 'UI/Button',
+  title: 'Components/UI/Button',
   args: {
     label: 'Button',
   },
