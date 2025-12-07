@@ -13,9 +13,9 @@ export default meta;
 type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
-    args: {
-        label: 'Primary',
-    },
+  args: {
+    label: 'Primary',
+  },
 };
 export const Secondary: Story = {
   args: {
