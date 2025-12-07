@@ -43,3 +43,8 @@ tasks:
     cmds:
       - pnpm run start
     dir: ./frontend
+  up:sb:
+    desc: "Run TS server with Storybook"
+    cmds:
+      - pnpm run storybook
+    dir: ./frontend
