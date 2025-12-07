@@ -8,6 +8,7 @@
     "start": "concurrently \"cd ../backend && air\" \"vite\"",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "format": "pnpm dlx prettier --write .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
