@@ -5,6 +5,7 @@ import List from './list';
 const meta: Meta<typeof List> = {
   component: List,
   title: 'Components/UI/List',
+  tags: ['autodocs'],
   args: {
     items: mockUsers.map((user) => user.name),
   },

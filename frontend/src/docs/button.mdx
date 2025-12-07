@@ -1,0 +1,12 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import * as ButtonStories from '../components/ui/Button.stories';
+
+<Meta of={ButtonStories} />
+
+# Button ガイドライン
+
+- primary は主アクションに 1 つだけ
+- secondary は補助アクションに使用
+- destructive は確認ダイアログ必須
+
+<Story of={ButtonStories.Primary} />
